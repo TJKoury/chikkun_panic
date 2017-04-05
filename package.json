@@ -1,0 +1,31 @@
+{
+  "name": "gdax_client",
+  "version": "1.0.0",
+  "description": "Casino ",
+  "main": "index.js",
+  "dependencies": {
+    "gdax": "^0.4.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  },
+  "scripts": {
+    "test": "test",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/TJKoury/gdax_client.git"
+  },
+  "keywords": [
+    "gdax",
+    "bitcoin",
+    "leverage"
+  ],
+  "author": "TJKoury",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TJKoury/gdax_client/issues"
+  },
+  "homepage": "https://github.com/TJKoury/gdax_client#readme"
+}
