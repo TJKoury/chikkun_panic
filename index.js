@@ -16,7 +16,7 @@ var analysis = function(data) {
         if(data.price){
             console.log(line);
             console.log("Price:    ", data.price);
-            console.log("Hodlings: ", data.price*parseFloat(hodlings));
+            console.log("Hodlings: ", (data.price*hodlings).toFixed(2));
             console.log(segwit);
         }        
     }
@@ -24,7 +24,7 @@ var analysis = function(data) {
 
 var _req = function(){
     require('request')('http://litecoinblockhalf.com/segwit.php', function (error, response, body) {
-                segwit = "SEGWIT:   " + body.match(/\([\d\.]{5}%\)/g)[0].replace(/\(\)/g, "");
+                segwit = "SEGWIT:    " + body.match(/\([\d\.]{5}%\)/g)[0].replace(/[\(\)]*/g, "");
     })
 }
 _req();
